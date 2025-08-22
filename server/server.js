@@ -87,7 +87,7 @@ app.get("/api/customers/excel", async (req, res) => {
     const formattedData = records.map((c) => ({
       Date: c.dateTime ? new Date(c.dateTime).toLocaleString() : "",
       Name: c.name,
-      "E Code": c.eCode,
+      "ETC Code": c.eCode,
       "Customer Name": c.customerName,
       DOB: c.dob ? new Date(c.dob).toLocaleDateString() : "",
       "Contact No": c.contactNo,

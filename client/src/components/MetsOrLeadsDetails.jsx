@@ -192,13 +192,13 @@ const MetsOrLeadsDetails = () => {
           {/* E Code */}
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
-              E Code
+              ETC Code
             </label>
             <input
               name="eCode"
               value={form.eCode}
               onChange={handleChange}
-              placeholder="Enter E Code"
+              placeholder="Enter ETC Code"
               className="border border-gray-300 rounded-lg p-3 w-full"
             />
           </div>
