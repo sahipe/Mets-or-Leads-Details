@@ -46,10 +46,13 @@ const MetsOrLeadsDetailsExcelDownload = () => {
       if (startDate) params.start = startDate;
       if (endDate) params.end = endDate;
 
-      const res = await axios.get("http://localhost:5000/api/customers/excel", {
-        params,
-        responseType: "blob",
-      });
+      const res = await axios.get(
+        "https://mets-or-leads-details.onrender.com/api/customers/excel",
+        {
+          params,
+          responseType: "blob",
+        }
+      );
 
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement("a");

@@ -112,7 +112,7 @@ const MetsOrLeadsDetails = () => {
           };
 
           await axios.post(
-            "http://localhost:5000/api/customers",
+            "https://mets-or-leads-details.onrender.com/api/customers",
             formWithLocation
           );
 
